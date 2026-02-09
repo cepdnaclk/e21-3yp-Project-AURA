@@ -19,9 +19,7 @@ title: Project AURA
 - **E/21/245**, MADHUSHAN S.K.A.K. - [Email](mailto:e21245@eng.pdn.ac.lk)
 - **E/21/407**, THENNAKOON T.M.I.I.C. - [Email](mailto:e21407@eng.pdn.ac.lk)
 
-<div style="text-align: center;">
-    <img src="./images/logo.png" alt="Project AURA Logo" width="300">
-</div>
+![Sample Image](./images/logo.png)
 
 ---
 
