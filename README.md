@@ -86,7 +86,7 @@ The robot is built around high-performance embedded computing to support AI task
 
 ## Links
 
-- **Project Repository:** [https://github.com/cepdnaclk/eYY-3yp-project-AURA](https://github.com/cepdnaclk/eYY-3yp-project-AURA)
-- **Project Page:** [https://cepdnaclk.github.io/eYY-3yp-project-AURA](https://cepdnaclk.github.io/eYY-3yp-project-AURA)
+- **Project Repository:** [https://github.com/cepdnaclk/eYY-3yp-project-AURA](https://github.com/cepdnaclk/e21-3yp-AURA)
+- **Project Page:** [https://cepdnaclk.github.io/eYY-3yp-project-AURA](https://cepdnaclk.github.io/e21-3yp-AURA)
 - **Department of Computer Engineering:** [http://www.ce.pdn.ac.lk/](http://www.ce.pdn.ac.lk/)
 - **University of Peradeniya:** [https://eng.pdn.ac.lk/](https://eng.pdn.ac.lk/)
