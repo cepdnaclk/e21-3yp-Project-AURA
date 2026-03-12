@@ -63,7 +63,7 @@ public class User implements UserDetails {
     // This keeps order history intact. @Builder.Default ensures true when using builder
     @Column(name = "is_active")
     @Builder.Default
-    private boolean isActive = true;
+    private boolean active = true;
 
     // Auto-set on first save — never changes after that
     @Column(name = "created_at", updatable = false)
@@ -94,7 +94,7 @@ public class User implements UserDetails {
     @Override public boolean isAccountNonExpired()     { return true; }
     @Override public boolean isAccountNonLocked()      { return true; }
     @Override public boolean isCredentialsNonExpired() { return true; }
-    @Override public boolean isEnabled()               { return isActive; }
+    @Override public boolean isEnabled()               { return active; }
 
     // ─── Roles ───────────────────────────────────────────────────────────────
 

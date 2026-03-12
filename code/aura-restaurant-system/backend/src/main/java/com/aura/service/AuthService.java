@@ -83,7 +83,7 @@ public class AuthService {
                 .username(request.username())
                 .passwordHash(passwordEncoder.encode(request.password()))
                 .role(role)
-                .isActive(true)
+                .active(true)
                 .build();
 
         userRepository.save(user);
@@ -104,3 +104,5 @@ public class AuthService {
         );
     }
 }
+
+

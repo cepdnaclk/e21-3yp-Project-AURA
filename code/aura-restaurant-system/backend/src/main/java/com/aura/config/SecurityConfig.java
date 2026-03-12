@@ -37,6 +37,7 @@ public class SecurityConfig {
     private static final String[] PUBLIC_ENDPOINTS = {
             "/api/auth/login",
             "/api/auth/register",
+            "/api/auth/hash", //temporary endpoint for generating password hashes during development
             "/api/menu/**",       // customers browse menu without login
             "/swagger-ui/**",
             "/swagger-ui.html",

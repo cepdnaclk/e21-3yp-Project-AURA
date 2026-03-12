@@ -1,5 +1,6 @@
 package com.aura.controller;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.aura.dto.AuthDtos.AuthResponse;
 import com.aura.dto.AuthDtos.LoginRequest;
 import com.aura.dto.AuthDtos.RegisterRequest;
@@ -52,5 +53,12 @@ public class AuthController {
     public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(authService.register(request));
+    }
+
+    /* TEMPORARY endpoint to generate BCrypt hash */
+    @GetMapping("/hash")
+    public String generateHash() {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+        return encoder.encode("Admin@1234");
     }
 }

@@ -21,20 +21,15 @@
 
 	<dependencies>
 
-		<!-- Core Spring Boot -->
+		<!-- Dev tools — auto restart on code change (only active in dev) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.30</version>
-			<scope>provided</scope>   <!-- ← important: provided, not compile -->
-			<optional>true</optional>
-		</dependency>
+
+		<!-- Core Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -82,7 +77,8 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Lombok — reduces boilerplate (@Getter, @Builder etc.) -->
+		<!-- Lombok — reduces boilerplate (@Getter, @Builder etc.)
+		     Only one declaration kept — duplicate removed -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -126,6 +122,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<!-- Explicitly set main class — needed because two AuraApplication
+					     classes exist after merging with teammate's code -->
+					<mainClass>com.aura.AuraApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

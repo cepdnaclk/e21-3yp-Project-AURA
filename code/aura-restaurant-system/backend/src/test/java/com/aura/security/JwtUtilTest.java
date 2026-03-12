@@ -29,7 +29,7 @@ class JwtUtilTest {
                 .username(username)
                 .passwordHash("$2a$12$ignored")
                 .role(role)
-                .isActive(true)
+                .active(true)
                 .build();
     }
 
